@@ -154,6 +154,14 @@ public class User implements Serializable {
         private java.lang.String picture;
 
     /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_chamado", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private Chamado chamado;
+
+    /**
     * Construtor
     * @generated
     */
@@ -482,6 +490,25 @@ public class User implements Serializable {
     */
     public User setPicture(java.lang.String picture){
         this.picture = picture;
+        return this;
+    }
+    /**
+    * Obtém chamado
+    * return chamado
+    * @generated
+    */
+    
+    public Chamado getChamado(){
+        return this.chamado;
+    }
+
+    /**
+    * Define chamado
+    * @param chamado chamado
+    * @generated
+    */
+    public User setChamado(Chamado chamado){
+        this.chamado = chamado;
         return this;
     }
 
