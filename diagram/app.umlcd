@@ -892,8 +892,8 @@
       "modelType": "Table",
       "name": "Chamado",
       "position": {
-        "x": 176,
-        "y": 472
+        "x": 174,
+        "y": 486
       },
       "queries": [],
       "realName": "",
