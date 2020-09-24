@@ -88,6 +88,14 @@ public class Chamado implements Serializable {
         private java.lang.String comentarios;
 
     /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private User user;
+
+    /**
     * Construtor
     * @generated
     */
@@ -244,6 +252,25 @@ public class Chamado implements Serializable {
     */
     public Chamado setComentarios(java.lang.String comentarios){
         this.comentarios = comentarios;
+        return this;
+    }
+    /**
+    * Obtém user
+    * return user
+    * @generated
+    */
+    
+    public User getUser(){
+        return this.user;
+    }
+
+    /**
+    * Define user
+    * @param user user
+    * @generated
+    */
+    public Chamado setUser(User user){
+        this.user = user;
         return this;
     }
 

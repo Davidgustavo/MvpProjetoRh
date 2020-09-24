@@ -157,9 +157,9 @@ public class User implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_chamado", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="fk_comentarios", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
         
-        private Chamado chamado;
+        private Comentarios comentarios;
 
     /**
     * Construtor
@@ -493,22 +493,22 @@ public class User implements Serializable {
         return this;
     }
     /**
-    * Obtém chamado
-    * return chamado
+    * Obtém comentarios
+    * return comentarios
     * @generated
     */
     
-    public Chamado getChamado(){
-        return this.chamado;
+    public Comentarios getComentarios(){
+        return this.comentarios;
     }
 
     /**
-    * Define chamado
-    * @param chamado chamado
+    * Define comentarios
+    * @param comentarios comentarios
     * @generated
     */
-    public User setChamado(Chamado chamado){
-        this.chamado = chamado;
+    public User setComentarios(Comentarios comentarios){
+        this.comentarios = comentarios;
         return this;
     }
 
