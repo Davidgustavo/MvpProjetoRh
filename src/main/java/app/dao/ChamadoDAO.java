@@ -19,6 +19,6 @@ import org.springframework.transaction.annotation.*;
  */
 @Repository("ChamadoDAO")
 @Transactional(transactionManager="app-TransactionManager")
-public interface ChamadoDAO extends JpaRepository<Chamado, java.lang.String> {
+public interface ChamadoDAO extends JpaRepository<Chamado, java.lang.Integer> {
 
 }
