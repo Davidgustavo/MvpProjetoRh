@@ -44,7 +44,7 @@ public class Comentarios implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_chamado", nullable = true, referencedColumnName = "numero_chamado", insertable=true, updatable=true)
+    @JoinColumn(name="fk_chamado", nullable = true, referencedColumnName = "numero_chamado", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Chamado chamado;
 

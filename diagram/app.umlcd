@@ -33,6 +33,161 @@
     {
       "angle": 0,
       "attributes": [
+        "id:java.lang.String",
+        "arquivo:CloudFile",
+        "chamado:Chamado"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 90,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\narquivo\nchamado\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 79.265625,
+          "text": "Texto\nArquivo no Cloud\nChamado\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "Anexo"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "arquivo",
+          "type": "CloudFile",
+          "dbName": "arquivo",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Arquivo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "chamado",
+          "type": "Chamado",
+          "dbName": "fk_chamado",
+          "label": "Chamado",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false
+        }
+      ],
+      "generateView": "Auto",
+      "id": "0e89b8cf-c8b7-45aa-9019-976c26236743",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Anexo",
+      "position": {
+        "x": 210,
+        "y": 758
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 118.69715118408203,
+        "width": 181.65625
+      },
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 39
+    },
+    {
+      "angle": 0,
+      "attributes": [
         "id:java.lang.Integer",
         "type:java.lang.String",
         "command:java.lang.String",
@@ -832,8 +987,8 @@
       "modelType": "Table",
       "name": "Chamado",
       "position": {
-        "x": 154,
-        "y": 472
+        "x": 188,
+        "y": 474
       },
       "queries": [],
       "realName": "",
@@ -987,8 +1142,8 @@
       "modelType": "Table",
       "name": "Comentarios",
       "position": {
-        "x": 296,
-        "y": 744
+        "x": 562,
+        "y": 768
       },
       "queries": [],
       "realName": "",
@@ -2751,25 +2906,26 @@
         "userName:java.lang.String",
         "theme:java.lang.String",
         "picture:java.lang.String",
-        "comentarios:Comentarios"
+        "comentarios:Comentarios",
+        "anexo:Anexo"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 390,
+          "height": 410,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "id\naccessFailedCount\nemail\nemailConfirmed\nlockoutEnabled\nlockoutEnd\nname\nnormalizedEmail\nnormalizedUserName\npassword\nphoneNumber\nphoneNumberConfirmed\nsecurityStamp\ntwoFactorEnabled\nuserName\ntheme\npicture\ncomentarios\n"
+          "text": "id\naccessFailedCount\nemail\nemailConfirmed\nlockoutEnabled\nlockoutEnd\nname\nnormalizedEmail\nnormalizedUserName\npassword\nphoneNumber\nphoneNumberConfirmed\nsecurityStamp\ntwoFactorEnabled\nuserName\ntheme\npicture\ncomentarios\nanexo\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 155.453125,
-          "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nTexto\nComentarios\n"
+          "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nTexto\nComentarios\nAnexo\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,440)"
+          "transform": "translate(0,460)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -3391,6 +3547,27 @@
           "isSearchable": false,
           "isCascade": false,
           "isVersion": false
+        },
+        {
+          "name": "anexo",
+          "type": "Anexo",
+          "dbName": "fk_anexo",
+          "label": "Anexo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false
         }
       ],
       "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
@@ -3483,7 +3660,7 @@
         ""
       ],
       "size": {
-        "height": 282.7584686279297,
+        "height": 293.7367706298828,
         "width": 236.3125
       },
       "tableName": "USER",
@@ -4843,6 +5020,96 @@
       "z": "4"
     },
     {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "eee486d1-9c5b-4f1c-8ac9-26470ded690d",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "anexo:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "0e89b8cf-c8b7-45aa-9019-976c26236743"
+      },
+      "target": {
+        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 41
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "f3a71147-a2d4-4c3b-8b1d-b3bcc5b39ba0",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "chamado:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "fef70372-1196-4713-bc33-e01e089a939e"
+      },
+      "target": {
+        "id": "0e89b8cf-c8b7-45aa-9019-976c26236743"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 42
+    },
+    {
       "attrs": {
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
@@ -4955,7 +5222,8 @@
         "6ca1c196-f650-41b0-9bcf-3f297eee371e",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
         "83488d95-9efb-4cf7-9cca-57f2dcb7dded",
-        "e35a650f-29ee-4683-8c1c-5cc61a955ddf"
+        "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+        "0e89b8cf-c8b7-45aa-9019-976c26236743"
       ]
     }
   ]

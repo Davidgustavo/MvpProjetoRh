@@ -62,7 +62,7 @@ public class Chamado implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_historico", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="fk_historico", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Historico historico;
 
@@ -70,7 +70,7 @@ public class Chamado implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private User user;
 
@@ -78,7 +78,7 @@ public class Chamado implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_prioridade", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="fk_prioridade", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Prioridade prioridade;
 
@@ -86,7 +86,7 @@ public class Chamado implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_status", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="fk_status", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Status status;
 
@@ -94,7 +94,7 @@ public class Chamado implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_tipo", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="fk_tipo", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Tipo tipo;
 

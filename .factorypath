@@ -73,7 +73,7 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/org/springframework/security/spring-security-web/5.0.4.RELEASE/spring-security-web-5.0.4.RELEASE.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/glassfish/javax.json/1.1.2/javax.json-1.1.2.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/javax/json/javax.json-api/1.1.2/javax.json-api-1.1.2.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/cronapp/cronapi-java/2.7.3/cronapi-java-2.7.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/io/cronapp/cronapi-java/2.7.4/cronapi-java-2.7.4.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/commons/commons-compress/1.8/commons-compress-1.8.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/tukaani/xz/1.5/xz-1.5.jar" enabled="true" runInBatchMode="false"/>

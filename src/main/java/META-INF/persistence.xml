@@ -17,6 +17,7 @@
         <class>app.entity.Prioridade</class>
         <class>app.entity.Device</class>
         <class>app.entity.Role</class>
+        <class>app.entity.Anexo</class>
         <class>app.entity.Tipo</class>
         <class>app.entity.Status</class>
         <properties>
