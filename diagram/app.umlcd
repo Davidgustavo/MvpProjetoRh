@@ -58,7 +58,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 103.796875,
+          "ref-x": 107.5999984741211,
           "text": "Inteiro\nTexto\nTexto\nData e Hora com Fuso\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -435,7 +435,7 @@
       "name": "AuditLog",
       "position": {
         "x": 1079.48828125,
-        "y": 32.89899444580078
+        "y": 32.89898681640625
       },
       "queries": [],
       "realName": "",
@@ -448,8 +448,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 227.90223693847656,
-        "width": 232.453125
+        "height": 228.27566528320312,
+        "width": 240.5999984741211
       },
       "tableName": "AUDIT_LOG",
       "type": "uml.Class",
@@ -472,7 +472,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 62.390625,
+          "ref-x": 64.39999961853027,
           "text": "Texto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -568,8 +568,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 107.89323043823242,
-        "width": 106.6875
+        "height": 108.26663589477539,
+        "width": 110.19999885559082
       },
       "tableName": null,
       "tableScheme": null,
@@ -599,7 +599,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 94.421875,
+          "ref-x": 98,
           "text": "Texto\nTexto\nTexto\nArquivo no Cloud\nCategoria\nHistorico\nStatus\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -847,8 +847,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 173.1524887084961,
-        "width": 196.8125
+        "height": 173.5259246826172,
+        "width": 204.5999984741211
       },
       "tableName": null,
       "tableScheme": null,
@@ -877,7 +877,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 111.4375,
+          "ref-x": 114.80000305175781,
           "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -1098,7 +1098,7 @@
       "name": "Device",
       "position": {
         "x": 871.98828125,
-        "y": 54.77777862548828
+        "y": 54.77777099609375
       },
       "queries": [],
       "restPath": "",
@@ -1106,8 +1106,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 162.2265625,
-        "width": 155.734375
+        "height": 162.5999984741211,
+        "width": 160.60000228881836
       },
       "tableName": "DEVICE",
       "tableScheme": null,
@@ -1133,7 +1133,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 112.265625,
+          "ref-x": 117.19999694824219,
           "text": "Texto\nData e Hora\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -1279,8 +1279,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 129.54235076904297,
-        "width": 189.578125
+        "height": 129.91578674316406,
+        "width": 197.39999771118164
       },
       "tableName": null,
       "tableScheme": null,
@@ -1307,7 +1307,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 139.15625,
+          "ref-x": 143.5999984741211,
           "text": "Texto\nTexto\nTexto\nTexto\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -1541,8 +1541,8 @@
         ""
       ],
       "size": {
-        "height": 140.4170379638672,
-        "width": 183.453125
+        "height": 140.79047393798828,
+        "width": 189.39999771118164
       },
       "tableName": "LOGIN",
       "type": "uml.Class",
@@ -1569,7 +1569,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 134.890625,
+          "ref-x": 139.5999984741211,
           "text": "Texto\nLógico\nLógico\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -1808,8 +1808,8 @@
         ""
       ],
       "size": {
-        "height": 140.4170379638672,
-        "width": 185.3125
+        "height": 140.79047393798828,
+        "width": 192.5999984741211
       },
       "tableName": "ROLE",
       "type": "uml.Class",
@@ -1836,7 +1836,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 81.703125,
+          "ref-x": 86,
           "text": "Texto\nRole\nSecurable\n"
         },
         ".uml-class-methods-rect": {
@@ -2009,8 +2009,8 @@
         ""
       ],
       "size": {
-        "height": 118.69715118408203,
-        "width": 149.25
+        "height": 119.0705795288086,
+        "width": 156.5999984741211
       },
       "tableName": "ROLE_SECURABLE",
       "type": "uml.Class",
@@ -2034,7 +2034,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 64.40625,
+          "ref-x": 65.20000076293945,
           "text": "Texto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -2187,8 +2187,8 @@
         ""
       ],
       "size": {
-        "height": 107.89323043823242,
-        "width": 108.703125
+        "height": 108.26666259765625,
+        "width": 111
       },
       "tableName": "SECURABLE",
       "type": "uml.Class",
@@ -2212,7 +2212,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 52.75,
+          "ref-x": 54.79999923706055,
           "text": "Texto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -2308,8 +2308,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 107.89323043823242,
-        "width": 97.046875
+        "height": 108.26663589477539,
+        "width": 100.5999984741211
       },
       "tableName": null,
       "tableScheme": null,
@@ -2349,7 +2349,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 155.453125,
+          "ref-x": 159.5999984741211,
           "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nTexto\nChamado\n"
         },
         ".uml-class-methods-rect": {
@@ -3035,7 +3035,7 @@
       ],
       "position": {
         "x": 288.078125,
-        "y": 2.2737367544323206e-13
+        "y": 0
       },
       "primaryKeys": [
         "id"
@@ -3068,8 +3068,8 @@
         ""
       ],
       "size": {
-        "height": 282.7584686279297,
-        "width": 232.765625
+        "height": 283.1319122314453,
+        "width": 239.79999923706055
       },
       "tableName": "USER",
       "type": "uml.Class",
@@ -3096,7 +3096,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 59.71875,
+          "ref-x": 61.20000076293945,
           "text": "Texto\nRole\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -3269,8 +3269,8 @@
         ""
       ],
       "size": {
-        "height": 118.69715118408203,
-        "width": 104.015625
+        "height": 119.0705795288086,
+        "width": 107
       },
       "tableName": "USER_ROLE",
       "type": "uml.Class",
@@ -3297,7 +3297,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 81.703125,
+          "ref-x": 86,
           "text": "Texto\nSecurable\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -3470,8 +3470,8 @@
         ""
       ],
       "size": {
-        "height": 118.69715118408203,
-        "width": 149.25
+        "height": 119.0705795288086,
+        "width": 156.5999984741211
       },
       "tableName": "USER_SECURABLE",
       "type": "uml.Class",
@@ -3504,7 +3504,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 145.6875,
+          "ref-x": 149.1999969482422,
           "text": "Texto\nSecurable\nTexto\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\n"
         },
         ".uml-class-methods-rect": {
@@ -3825,8 +3825,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 205.984130859375,
-        "width": 213.234375
+        "height": 206.35755920410156,
+        "width": 219.79999542236328
       },
       "tableName": "VIEW",
       "tableScheme": null,
