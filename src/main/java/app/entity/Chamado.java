@@ -15,7 +15,8 @@ import cronapi.rest.security.CronappSecurity;
 * @generated
 */
 @Entity
-@Table(name = "\"CHAMADO\"")
+@Table(name = "\"CHAMADO\"" ,uniqueConstraints=@UniqueConstraint(name="UNQ_CHAMADO_0", columnNames={
+    "numero_chamado" }))
 @XmlRootElement
 @CronappSecurity
 @JsonFilter("app.entity.Chamado")
@@ -31,8 +32,9 @@ public class Chamado implements Serializable {
     * @generated
     */
     @Id
-    @Column(name = "id", nullable = false, insertable=true, updatable=true)
-        private java.lang.String id = UUID.randomUUID().toString().toUpperCase();
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "numero_chamado", nullable = false, insertable=true, updatable=true)
+        private java.lang.Integer numero_chamado;
 
     /**
     * @generated
@@ -60,15 +62,7 @@ public class Chamado implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_class1", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
-        
-        private Categoria class1;
-
-    /**
-    * @generated
-    */
-    @ManyToOne
-    @JoinColumn(name="fk_historico", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="fk_historico", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Historico historico;
 
@@ -76,16 +70,41 @@ public class Chamado implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="fk_status", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+        
+        private User user;
+
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_prioridade", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+        
+        private Prioridade prioridade;
+
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_status", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Status status;
 
     /**
     * @generated
     */
-    @Column(name = "comentarios", nullable = true, unique = false, insertable=true, updatable=true)
+    @ManyToOne
+    @JoinColumn(name="fk_tipo", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
-        private java.lang.String comentarios;
+        private Tipo tipo;
+
+    /**
+    * @generated
+    */
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "data_abertura", nullable = true, unique = false, insertable=true, updatable=true)
+        @CronappSecurity(delete = "None", put = "None")
+        private java.util.Date data_abertura = Calendar.getInstance().getTime();
 
     /**
     * Construtor
@@ -94,25 +113,6 @@ public class Chamado implements Serializable {
     public Chamado(){
     }
 
-    /**
-    * Obtém id
-    * return id
-    * @generated
-    */
-    
-    public java.lang.String getId(){
-        return this.id;
-    }
-
-    /**
-    * Define id
-    * @param id id
-    * @generated
-    */
-    public Chamado setId(java.lang.String id){
-        this.id = id;
-        return this;
-    }
     /**
     * Obtém assunto
     * return assunto
@@ -171,25 +171,6 @@ public class Chamado implements Serializable {
         return this;
     }
     /**
-    * Obtém class1
-    * return class1
-    * @generated
-    */
-    
-    public Categoria getClass1(){
-        return this.class1;
-    }
-
-    /**
-    * Define class1
-    * @param class1 class1
-    * @generated
-    */
-    public Chamado setClass1(Categoria class1){
-        this.class1 = class1;
-        return this;
-    }
-    /**
     * Obtém historico
     * return historico
     * @generated
@@ -206,6 +187,44 @@ public class Chamado implements Serializable {
     */
     public Chamado setHistorico(Historico historico){
         this.historico = historico;
+        return this;
+    }
+    /**
+    * Obtém user
+    * return user
+    * @generated
+    */
+    
+    public User getUser(){
+        return this.user;
+    }
+
+    /**
+    * Define user
+    * @param user user
+    * @generated
+    */
+    public Chamado setUser(User user){
+        this.user = user;
+        return this;
+    }
+    /**
+    * Obtém prioridade
+    * return prioridade
+    * @generated
+    */
+    
+    public Prioridade getPrioridade(){
+        return this.prioridade;
+    }
+
+    /**
+    * Define prioridade
+    * @param prioridade prioridade
+    * @generated
+    */
+    public Chamado setPrioridade(Prioridade prioridade){
+        this.prioridade = prioridade;
         return this;
     }
     /**
@@ -228,22 +247,60 @@ public class Chamado implements Serializable {
         return this;
     }
     /**
-    * Obtém comentarios
-    * return comentarios
+    * Obtém tipo
+    * return tipo
     * @generated
     */
     
-    public java.lang.String getComentarios(){
-        return this.comentarios;
+    public Tipo getTipo(){
+        return this.tipo;
     }
 
     /**
-    * Define comentarios
-    * @param comentarios comentarios
+    * Define tipo
+    * @param tipo tipo
     * @generated
     */
-    public Chamado setComentarios(java.lang.String comentarios){
-        this.comentarios = comentarios;
+    public Chamado setTipo(Tipo tipo){
+        this.tipo = tipo;
+        return this;
+    }
+    /**
+    * Obtém data_abertura
+    * return data_abertura
+    * @generated
+    */
+    @CronappSecurity(delete = "None", put = "None")
+    public java.util.Date getData_abertura(){
+        return this.data_abertura;
+    }
+
+    /**
+    * Define data_abertura
+    * @param data_abertura data_abertura
+    * @generated
+    */
+    public Chamado setData_abertura(java.util.Date data_abertura){
+        this.data_abertura = data_abertura;
+        return this;
+    }
+    /**
+    * Obtém numero_chamado
+    * return numero_chamado
+    * @generated
+    */
+    
+    public java.lang.Integer getNumero_chamado(){
+        return this.numero_chamado;
+    }
+
+    /**
+    * Define numero_chamado
+    * @param numero_chamado numero_chamado
+    * @generated
+    */
+    public Chamado setNumero_chamado(java.lang.Integer numero_chamado){
+        this.numero_chamado = numero_chamado;
         return this;
     }
 
@@ -255,7 +312,7 @@ public class Chamado implements Serializable {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
 Chamado object = (Chamado)obj;
-        if (id != null ? !id.equals(object.id) : object.id != null) return false;
+        if (numero_chamado != null ? !numero_chamado.equals(object.numero_chamado) : object.numero_chamado != null) return false;
         return true;
     }
 
@@ -265,7 +322,7 @@ Chamado object = (Chamado)obj;
     @Override
     public int hashCode() {
         int result = 1;
-        result = 31 * result + ((id == null) ? 0 : id.hashCode());
+        result = 31 * result + ((numero_chamado == null) ? 0 : numero_chamado.hashCode());
         return result;
     }
 

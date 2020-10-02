@@ -33,6 +33,161 @@
     {
       "angle": 0,
       "attributes": [
+        "id:java.lang.String",
+        "arquivo:CloudFile",
+        "chamado:Chamado"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 90,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\narquivo\nchamado\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 79.265625,
+          "text": "Texto\nArquivo no Cloud\nChamado\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "Anexo"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "arquivo",
+          "type": "CloudFile",
+          "dbName": "arquivo",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Arquivo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "chamado",
+          "type": "Chamado",
+          "dbName": "fk_chamado",
+          "label": "Chamado",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false
+        }
+      ],
+      "generateView": "Auto",
+      "id": "0e89b8cf-c8b7-45aa-9019-976c26236743",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Anexo",
+      "position": {
+        "x": 210,
+        "y": 758
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 118.69715118408203,
+        "width": 181.65625
+      },
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 39
+    },
+    {
+      "angle": 0,
+      "attributes": [
         "id:java.lang.Integer",
         "type:java.lang.String",
         "command:java.lang.String",
@@ -58,7 +213,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 107.5999984741211,
+          "ref-x": 103.796875,
           "text": "Inteiro\nTexto\nTexto\nData e Hora com Fuso\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -435,7 +590,7 @@
       "name": "AuditLog",
       "position": {
         "x": 1079.48828125,
-        "y": 32.89898681640625
+        "y": 32.89899444580078
       },
       "queries": [],
       "realName": "",
@@ -448,8 +603,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 228.27566528320312,
-        "width": 240.5999984741211
+        "height": 227.90223693847656,
+        "width": 232.453125
       },
       "tableName": "AUDIT_LOG",
       "type": "uml.Class",
@@ -458,153 +613,34 @@
     {
       "angle": 0,
       "attributes": [
-        "id:java.lang.String",
-        "nome:java.lang.String"
-      ],
-      "attrs": {
-        ".uml-class-attrs-rect": {
-          "height": 70,
-          "transform": "translate(0,50)"
-        },
-        ".uml-class-attrs-text": {
-          "font-size": 11,
-          "text": "id\nnome\n"
-        },
-        ".uml-class-attrs-value": {
-          "font-size": 11,
-          "ref-x": 64.39999961853027,
-          "text": "Texto\nTexto\n"
-        },
-        ".uml-class-methods-rect": {
-          "height": 30,
-          "transform": "translate(0,120)"
-        },
-        ".uml-class-methods-text": {
-          "fill": "#0066FF",
-          "font-size": 11,
-          "text": ""
-        },
-        ".uml-class-name-rect": {
-          "height": 50,
-          "transform": "translate(0,0)"
-        },
-        ".uml-class-name-text": {
-          "fill": "#000",
-          "font-size": 12,
-          "font-weight": "bold",
-          "text": "Categoria"
-        },
-        "rect": {
-          "stroke": "yellow",
-          "stroke-width": 2
-        }
-      },
-      "embeds": "",
-      "fields": [
-        {
-          "name": "id",
-          "type": "java.lang.String",
-          "dbName": "id",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
-          "label": "",
-          "mask": "",
-          "isPrimaryKey": true,
-          "isUniqueKey": false,
-          "isNullable": false,
-          "pkType": "UUID",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false
-        },
-        {
-          "name": "nome",
-          "type": "java.lang.String",
-          "dbName": "nome",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Nome",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false
-        }
-      ],
-      "generateView": "Auto",
-      "id": "5f5c4419-378b-4f5e-af8c-51a7777db272",
-      "isRest": "true",
-      "methods": [],
-      "modelType": "Table",
-      "name": "Categoria",
-      "position": {
-        "x": 454,
-        "y": 548
-      },
-      "queries": [],
-      "realName": "",
-      "restSecurity": null,
-      "role": "Auto",
-      "runtimeClass": "cronos.widgets.joint.uml.Class",
-      "size": {
-        "height": 108.26663589477539,
-        "width": 110.19999885559082
-      },
-      "tableName": null,
-      "tableScheme": null,
-      "type": "uml.Class",
-      "z": 18
-    },
-    {
-      "angle": 0,
-      "attributes": [
-        "id:java.lang.String",
         "assunto:java.lang.String",
         "descricao:java.lang.String",
         "anexo:CloudFile",
-        "class1:Categoria",
         "historico:Historico",
+        "user:User",
+        "prioridade:Prioridade",
         "status:Status",
-        "comentarios:java.lang.String"
+        "tipo:Tipo",
+        "data_abertura:java.sql.Date",
+        "numero_chamado:java.lang.Integer"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 190,
+          "height": 230,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "id\nassunto\ndescricao\nanexo\nclass1\nhistorico\nstatus\ncomentarios\n"
+          "text": "assunto\ndescricao\nanexo\nhistorico\nuser\nprioridade\nstatus\ntipo\ndata_abertura\nnumero_chamado\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 98,
-          "text": "Texto\nTexto\nTexto\nArquivo no Cloud\nCategoria\nHistorico\nStatus\nTexto\n"
+          "ref-x": 123.671875,
+          "text": "Texto\nTexto\nArquivo no Cloud\nHistorico\nUser\nPrioridade\nStatus\nTipo\nData e Hora\nInteiro\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,240)"
+          "transform": "translate(0,280)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -626,33 +662,9 @@
           "stroke-width": 2
         }
       },
+      "audit": false,
       "embeds": "",
       "fields": [
-        {
-          "name": "id",
-          "type": "java.lang.String",
-          "dbName": "id",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
-          "label": "Id",
-          "mask": "",
-          "isPrimaryKey": true,
-          "isUniqueKey": false,
-          "isNullable": false,
-          "pkType": "UUID",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false
-        },
         {
           "name": "assunto",
           "type": "java.lang.String",
@@ -676,7 +688,13 @@
           "referencedColumnName": "",
           "isSearchable": false,
           "sequence": "",
-          "isCascade": false
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "descricao",
@@ -701,7 +719,13 @@
           "referencedColumnName": "",
           "isSearchable": false,
           "sequence": "",
-          "isCascade": false
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "anexo",
@@ -727,33 +751,12 @@
           "isSearchable": false,
           "sequence": "",
           "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "sl.Ahv23ZNZ2d2MbHFO4xYJe7fM8X07PwnVbUCxarZcctx1jxyQBzdjJF-YsiXiexxnSqNifEAje5gA859NOXtojdzTm_FDyWn8HDUh4wvbdt011bjML1Vp20_ch9RYrUzmAtdKfho",
           "storageType": "dropbox",
-          "storageKey": "sl.Ahv23ZNZ2d2MbHFO4xYJe7fM8X07PwnVbUCxarZcctx1jxyQBzdjJF-YsiXiexxnSqNifEAje5gA859NOXtojdzTm_FDyWn8HDUh4wvbdt011bjML1Vp20_ch9RYrUzmAtdKfho"
-        },
-        {
-          "name": "class1",
-          "type": "Categoria",
-          "dbName": "fk_class1",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "historico",
@@ -778,7 +781,75 @@
           "referencedColumnName": "",
           "isSearchable": false,
           "sequence": "",
-          "isCascade": false
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "dbName": "fk_user",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "User",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "prioridade",
+          "type": "Prioridade",
+          "dbName": "fk_prioridade",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Prioridade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "status",
@@ -788,7 +859,7 @@
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "",
+          "label": "Status",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -803,17 +874,23 @@
           "referencedColumnName": "",
           "isSearchable": false,
           "sequence": "",
-          "isCascade": false
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
-          "name": "comentarios",
-          "type": "java.lang.String",
-          "dbName": "comentarios",
+          "name": "tipo",
+          "type": "Tipo",
+          "dbName": "fk_tipo",
           "dbLength": "",
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "Comentários",
+          "label": "Tipo",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -828,7 +905,79 @@
           "referencedColumnName": "",
           "isSearchable": false,
           "sequence": "",
-          "isCascade": false
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "data_abertura",
+          "type": "java.sql.Date",
+          "dbName": "data_abertura",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "Calendar.getInstance().getTime()",
+          "label": "Data Abertura",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "security": {
+            "delete": "None",
+            "put": "None"
+          },
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "numero_chamado",
+          "type": "java.lang.Integer",
+          "dbName": "numero_chamado",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Numero Chamado",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": true,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -838,8 +987,8 @@
       "modelType": "Table",
       "name": "Chamado",
       "position": {
-        "x": 36,
-        "y": 514
+        "x": 188,
+        "y": 474
       },
       "queries": [],
       "realName": "",
@@ -847,13 +996,168 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 173.5259246826172,
-        "width": 204.5999984741211
+        "height": 195.0330047607422,
+        "width": 226.0625
       },
-      "tableName": null,
+      "tableName": "",
       "tableScheme": null,
       "type": "uml.Class",
       "z": 17
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "comentario:java.lang.String",
+        "chamado:Chamado"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 90,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\ncomentario\nchamado\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 88.421875,
+          "text": "Texto\nTexto\nChamado\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "Comentarios"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "comentario",
+          "type": "java.lang.String",
+          "dbName": "comentario",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Comentario",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "chamado",
+          "type": "Chamado",
+          "dbName": "fk_chamado",
+          "label": "Chamado",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false
+        }
+      ],
+      "generateView": "Auto",
+      "id": "6ca1c196-f650-41b0-9bcf-3f297eee371e",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Comentarios",
+      "position": {
+        "x": 562,
+        "y": 768
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 118.69715118408203,
+        "width": 154.125
+      },
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 25
     },
     {
       "angle": 0,
@@ -877,7 +1181,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 114.80000305175781,
+          "ref-x": 111.4375,
           "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -1098,7 +1402,7 @@
       "name": "Device",
       "position": {
         "x": 871.98828125,
-        "y": 54.77777099609375
+        "y": 54.77777862548828
       },
       "queries": [],
       "restPath": "",
@@ -1106,8 +1410,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 162.5999984741211,
-        "width": 160.60000228881836
+        "height": 162.2265625,
+        "width": 155.734375
       },
       "tableName": "DEVICE",
       "tableScheme": null,
@@ -1133,7 +1437,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 117.19999694824219,
+          "ref-x": 112.265625,
           "text": "Texto\nData e Hora\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -1270,8 +1574,8 @@
       "modelType": "Table",
       "name": "Historico",
       "position": {
-        "x": 420,
-        "y": 710
+        "x": 494,
+        "y": 520
       },
       "queries": [],
       "realName": "",
@@ -1279,8 +1583,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 129.91578674316406,
-        "width": 197.39999771118164
+        "height": 129.54235076904297,
+        "width": 189.578125
       },
       "tableName": null,
       "tableScheme": null,
@@ -1307,7 +1611,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 143.5999984741211,
+          "ref-x": 139.15625,
           "text": "Texto\nTexto\nTexto\nTexto\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -1541,13 +1845,146 @@
         ""
       ],
       "size": {
-        "height": 140.79047393798828,
-        "width": 189.39999771118164
+        "height": 140.4170379638672,
+        "width": 183.453125
       },
       "tableName": "LOGIN",
       "type": "uml.Class",
       "uniqueKeys": [],
       "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "nome:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 70,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\nnome\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 66.40625,
+          "text": "Texto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "Prioridade"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "nome",
+          "type": "java.lang.String",
+          "dbName": "nome",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Nome",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "b8ef33e0-0621-4d5b-ad82-0ea5d6fb212d",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Prioridade",
+      "position": {
+        "x": 30,
+        "y": 470
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 107.89323043823242,
+        "width": 110.703125
+      },
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 29
     },
     {
       "angle": 0,
@@ -1569,7 +2006,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 139.5999984741211,
+          "ref-x": 134.890625,
           "text": "Texto\nLógico\nLógico\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -1808,8 +2245,8 @@
         ""
       ],
       "size": {
-        "height": 140.79047393798828,
-        "width": 192.5999984741211
+        "height": 140.4170379638672,
+        "width": 185.3125
       },
       "tableName": "ROLE",
       "type": "uml.Class",
@@ -1836,7 +2273,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 86,
+          "ref-x": 81.703125,
           "text": "Texto\nRole\nSecurable\n"
         },
         ".uml-class-methods-rect": {
@@ -1987,8 +2424,8 @@
         "securable"
       ],
       "position": {
-        "x": 302.87890625,
-        "y": 365.42559814453125
+        "x": 338,
+        "y": 362
       },
       "primaryKeys": [
         "id"
@@ -2009,8 +2446,8 @@
         ""
       ],
       "size": {
-        "height": 119.0705795288086,
-        "width": 156.5999984741211
+        "height": 118.69715118408203,
+        "width": 149.25
       },
       "tableName": "ROLE_SECURABLE",
       "type": "uml.Class",
@@ -2034,7 +2471,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 65.20000076293945,
+          "ref-x": 64.40625,
           "text": "Texto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -2187,8 +2624,8 @@
         ""
       ],
       "size": {
-        "height": 108.26666259765625,
-        "width": 111
+        "height": 107.89323043823242,
+        "width": 108.703125
       },
       "tableName": "SECURABLE",
       "type": "uml.Class",
@@ -2212,7 +2649,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 54.79999923706055,
+          "ref-x": 52.75,
           "text": "Texto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -2299,8 +2736,8 @@
       "modelType": "Table",
       "name": "Status",
       "position": {
-        "x": 36,
-        "y": 748
+        "x": 34,
+        "y": 752
       },
       "queries": [],
       "realName": "",
@@ -2308,13 +2745,146 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 108.26663589477539,
-        "width": 100.5999984741211
+        "height": 107.89323043823242,
+        "width": 97.046875
       },
       "tableName": null,
       "tableScheme": null,
       "type": "uml.Class",
       "z": 20
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "nome:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 70,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\nnome\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 61.53125,
+          "text": "Texto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "Tipo"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "nome",
+          "type": "java.lang.String",
+          "dbName": "nome",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Nome",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "83488d95-9efb-4cf7-9cca-57f2dcb7dded",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "Tipo",
+      "position": {
+        "x": 14,
+        "y": 598
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 107.89323043823242,
+        "width": 105.828125
+      },
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 31
     },
     {
       "angle": 0,
@@ -2336,25 +2906,26 @@
         "userName:java.lang.String",
         "theme:java.lang.String",
         "picture:java.lang.String",
-        "chamado:Chamado"
+        "comentarios:Comentarios",
+        "anexo:Anexo"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 390,
+          "height": 410,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "id\naccessFailedCount\nemail\nemailConfirmed\nlockoutEnabled\nlockoutEnd\nname\nnormalizedEmail\nnormalizedUserName\npassword\nphoneNumber\nphoneNumberConfirmed\nsecurityStamp\ntwoFactorEnabled\nuserName\ntheme\npicture\nchamado\n"
+          "text": "id\naccessFailedCount\nemail\nemailConfirmed\nlockoutEnabled\nlockoutEnd\nname\nnormalizedEmail\nnormalizedUserName\npassword\nphoneNumber\nphoneNumberConfirmed\nsecurityStamp\ntwoFactorEnabled\nuserName\ntheme\npicture\ncomentarios\nanexo\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 159.5999984741211,
-          "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nTexto\nChamado\n"
+          "ref-x": 155.453125,
+          "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nTexto\nComentarios\nAnexo\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,440)"
+          "transform": "translate(0,460)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -2957,10 +3528,31 @@
           "storageSecret": ""
         },
         {
-          "name": "chamado",
-          "type": "Chamado",
-          "dbName": "fk_chamado",
-          "label": "Chamado",
+          "name": "comentarios",
+          "type": "Comentarios",
+          "dbName": "fk_comentarios",
+          "label": "Comentarios",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false
+        },
+        {
+          "name": "anexo",
+          "type": "Anexo",
+          "dbName": "fk_anexo",
+          "label": "Anexo",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -3035,7 +3627,7 @@
       ],
       "position": {
         "x": 288.078125,
-        "y": 0
+        "y": 2.2737367544323206e-13
       },
       "primaryKeys": [
         "id"
@@ -3068,8 +3660,8 @@
         ""
       ],
       "size": {
-        "height": 283.1319122314453,
-        "width": 239.79999923706055
+        "height": 293.7367706298828,
+        "width": 236.3125
       },
       "tableName": "USER",
       "type": "uml.Class",
@@ -3096,7 +3688,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 61.20000076293945,
+          "ref-x": 59.71875,
           "text": "Texto\nRole\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -3247,8 +3839,8 @@
         "user"
       ],
       "position": {
-        "x": 58.22265625,
-        "y": 365.42559814453125
+        "x": 54,
+        "y": 294
       },
       "primaryKeys": [
         "id"
@@ -3269,8 +3861,8 @@
         ""
       ],
       "size": {
-        "height": 119.0705795288086,
-        "width": 107
+        "height": 118.69715118408203,
+        "width": 104.015625
       },
       "tableName": "USER_ROLE",
       "type": "uml.Class",
@@ -3297,7 +3889,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 86,
+          "ref-x": 81.703125,
           "text": "Texto\nSecurable\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -3470,8 +4062,8 @@
         ""
       ],
       "size": {
-        "height": 119.0705795288086,
-        "width": 156.5999984741211
+        "height": 118.69715118408203,
+        "width": 149.25
       },
       "tableName": "USER_SECURABLE",
       "type": "uml.Class",
@@ -3504,7 +4096,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 149.1999969482422,
+          "ref-x": 145.6875,
           "text": "Texto\nSecurable\nTexto\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\n"
         },
         ".uml-class-methods-rect": {
@@ -3825,8 +4417,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 206.35755920410156,
-        "width": 219.79999542236328
+        "height": 205.984130859375,
+        "width": 213.234375
       },
       "tableName": "VIEW",
       "tableScheme": null,
@@ -3845,8 +4437,7 @@
           "fill": ""
         }
       },
-      "embeds": "",
-      "id": "2fd7d644-d7cb-4280-b68c-ef23a837b7db",
+      "id": "257dedd6-10a9-4e68-bb77-a482a23307b9",
       "labels": [
         {
           "position": 0.9,
@@ -3866,18 +4457,18 @@
       "name": null,
       "queries": [],
       "relationFields": [
-        "class1:source"
+        "tipo:source"
       ],
       "runtimeClass": "cronos.widgets.joint.arrow.OneToOne",
       "source": {
         "id": "fef70372-1196-4713-bc33-e01e089a939e"
       },
       "target": {
-        "id": "5f5c4419-378b-4f5e-af8c-51a7777db272"
+        "id": "83488d95-9efb-4cf7-9cca-57f2dcb7dded"
       },
       "type": "uml.Composition",
       "vertices": [],
-      "z": 21
+      "z": 38
     },
     {
       "attrs": {
@@ -3921,6 +4512,96 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": "4"
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "51b8bc93-6db0-4f40-b1f3-421101836dc8",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "1",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "prioridade:source"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToOne",
+      "source": {
+        "id": "fef70372-1196-4713-bc33-e01e089a939e"
+      },
+      "target": {
+        "id": "b8ef33e0-0621-4d5b-ad82-0ea5d6fb212d"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 36
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "53fb0fb5-0992-4146-be59-f8578cd302ec",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "user:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
+      },
+      "target": {
+        "id": "fef70372-1196-4713-bc33-e01e089a939e"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 28
     },
     {
       "attrs": {
@@ -4074,51 +4755,6 @@
       "z": "4"
     },
     {
-      "associationType": "Association",
-      "attrs": {
-        ".marker-source": {
-          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
-          "fill": "#cecece"
-        },
-        ".marker-target": {
-          "d": "",
-          "fill": ""
-        }
-      },
-      "id": "725bf4b3-c455-4847-8000-97f6c13d6bad",
-      "labels": [
-        {
-          "position": 0.9,
-          "attrs": {
-            "rect": {
-              "fill": "transparent"
-            },
-            "text": {
-              "text": "*",
-              "font-family": "Arial",
-              "font-size": "12px",
-              "fill": "#cecece"
-            }
-          }
-        }
-      ],
-      "name": null,
-      "queries": [],
-      "relationFields": [
-        "chamado:target"
-      ],
-      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
-      "source": {
-        "id": "fef70372-1196-4713-bc33-e01e089a939e"
-      },
-      "target": {
-        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
-      },
-      "type": "uml.Composition",
-      "vertices": [],
-      "z": 24
-    },
-    {
       "attrs": {
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
@@ -4160,6 +4796,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": "4"
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "88ac4af6-c949-4465-9fe8-8a97bced3e5f",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "1",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "status:source"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToOne",
+      "source": {
+        "id": "fef70372-1196-4713-bc33-e01e089a939e"
+      },
+      "target": {
+        "id": "dc3bbc3e-7239-4b2b-80e0-af6827c5c554"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 37
     },
     {
       "associationType": "Association",
@@ -4251,6 +4932,51 @@
       "z": "4"
     },
     {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "dc83b2d3-414e-48db-8b5a-3a6b9ba606a6",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "comentarios:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "6ca1c196-f650-41b0-9bcf-3f297eee371e"
+      },
+      "target": {
+        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 26
+    },
+    {
       "attrs": {
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
@@ -4305,8 +5031,7 @@
           "fill": ""
         }
       },
-      "embeds": "",
-      "id": "f22b43c0-65b3-49dd-bae4-564c9963450f",
+      "id": "eee486d1-9c5b-4f1c-8ac9-26470ded690d",
       "labels": [
         {
           "position": 0.9,
@@ -4315,7 +5040,7 @@
               "fill": "transparent"
             },
             "text": {
-              "text": "1",
+              "text": "*",
               "font-family": "Arial",
               "font-size": "12px",
               "fill": "#cecece"
@@ -4326,18 +5051,63 @@
       "name": null,
       "queries": [],
       "relationFields": [
-        "status:source"
+        "anexo:target"
       ],
-      "runtimeClass": "cronos.widgets.joint.arrow.OneToOne",
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "0e89b8cf-c8b7-45aa-9019-976c26236743"
+      },
+      "target": {
+        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 41
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "f3a71147-a2d4-4c3b-8b1d-b3bcc5b39ba0",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "chamado:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
       "source": {
         "id": "fef70372-1196-4713-bc33-e01e089a939e"
       },
       "target": {
-        "id": "dc3bbc3e-7239-4b2b-80e0-af6827c5c554"
+        "id": "0e89b8cf-c8b7-45aa-9019-976c26236743"
       },
       "type": "uml.Composition",
       "vertices": [],
-      "z": 23
+      "z": 42
     },
     {
       "attrs": {
@@ -4381,6 +5151,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": "4"
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "fb1d1592-9833-4d51-8f6c-5adcfab6b5f9",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "chamado:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "fef70372-1196-4713-bc33-e01e089a939e"
+      },
+      "target": {
+        "id": "6ca1c196-f650-41b0-9bcf-3f297eee371e"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 27
     }
   ],
   "selectedGroup": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
@@ -4400,12 +5215,15 @@
         "2016ad54-a0f9-4337-ad10-694a48f0435c",
         "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
         "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
-        "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+        "b8ef33e0-0621-4d5b-ad82-0ea5d6fb212d",
         "dc3bbc3e-7239-4b2b-80e0-af6827c5c554",
-        "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
         "fef70372-1196-4713-bc33-e01e089a939e",
-        "5f5c4419-378b-4f5e-af8c-51a7777db272",
-        "e35a650f-29ee-4683-8c1c-5cc61a955ddf"
+        "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+        "6ca1c196-f650-41b0-9bcf-3f297eee371e",
+        "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+        "83488d95-9efb-4cf7-9cca-57f2dcb7dded",
+        "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+        "0e89b8cf-c8b7-45aa-9019-976c26236743"
       ]
     }
   ]
