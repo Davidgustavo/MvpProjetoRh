@@ -49,6 +49,14 @@ public class Comentarios implements Serializable {
         private Chamado chamado;
 
     /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+        
+        private User user;
+
+    /**
     * Construtor
     * @generated
     */
@@ -110,6 +118,25 @@ public class Comentarios implements Serializable {
     */
     public Comentarios setChamado(Chamado chamado){
         this.chamado = chamado;
+        return this;
+    }
+    /**
+    * Obtém user
+    * return user
+    * @generated
+    */
+    
+    public User getUser(){
+        return this.user;
+    }
+
+    /**
+    * Define user
+    * @param user user
+    * @generated
+    */
+    public Comentarios setUser(User user){
+        this.user = user;
         return this;
     }
 

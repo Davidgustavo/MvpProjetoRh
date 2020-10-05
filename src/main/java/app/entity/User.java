@@ -154,22 +154,6 @@ public class User implements Serializable {
         private java.lang.String picture;
 
     /**
-    * @generated
-    */
-    @ManyToOne
-    @JoinColumn(name="fk_comentarios", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
-        
-        private Comentarios comentarios;
-
-    /**
-    * @generated
-    */
-    @ManyToOne
-    @JoinColumn(name="fk_anexo", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
-        
-        private Anexo anexo;
-
-    /**
     * Construtor
     * @generated
     */
@@ -498,44 +482,6 @@ public class User implements Serializable {
     */
     public User setPicture(java.lang.String picture){
         this.picture = picture;
-        return this;
-    }
-    /**
-    * Obtém comentarios
-    * return comentarios
-    * @generated
-    */
-    
-    public Comentarios getComentarios(){
-        return this.comentarios;
-    }
-
-    /**
-    * Define comentarios
-    * @param comentarios comentarios
-    * @generated
-    */
-    public User setComentarios(Comentarios comentarios){
-        this.comentarios = comentarios;
-        return this;
-    }
-    /**
-    * Obtém anexo
-    * return anexo
-    * @generated
-    */
-    
-    public Anexo getAnexo(){
-        return this.anexo;
-    }
-
-    /**
-    * Define anexo
-    * @param anexo anexo
-    * @generated
-    */
-    public User setAnexo(Anexo anexo){
-        this.anexo = anexo;
         return this;
     }
 
