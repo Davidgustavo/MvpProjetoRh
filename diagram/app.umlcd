@@ -200,8 +200,8 @@
       "modelType": "Table",
       "name": "Anexo",
       "position": {
-        "x": 274,
-        "y": 746
+        "x": 312,
+        "y": 796
       },
       "queries": [],
       "realName": "",
@@ -647,7 +647,6 @@
       "attributes": [
         "assunto:java.lang.String",
         "descricao:java.lang.String",
-        "anexo:CloudFile",
         "historico:Historico",
         "user:User",
         "prioridade:Prioridade",
@@ -658,21 +657,21 @@
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 230,
+          "height": 210,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "assunto\ndescricao\nanexo\nhistorico\nuser\nprioridade\nstatus\ntipo\ndata_abertura\nnumero_chamado\n"
+          "text": "assunto\ndescricao\nhistorico\nuser\nprioridade\nstatus\ntipo\ndata_abertura\nnumero_chamado\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 123.671875,
-          "text": "Texto\nTexto\nArquivo no Cloud\nHistorico\nUser\nPrioridade\nStatus\nTipo\nData e Hora\nInteiro\n"
+          "text": "Texto\nTexto\nHistorico\nUser\nPrioridade\nStatus\nTipo\nData e Hora\nInteiro\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,280)"
+          "transform": "translate(0,260)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -756,37 +755,6 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "anexo",
-          "type": "CloudFile",
-          "dbName": "anexo",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Anexo",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "sl.Ahv23ZNZ2d2MbHFO4xYJe7fM8X07PwnVbUCxarZcctx1jxyQBzdjJF-YsiXiexxnSqNifEAje5gA859NOXtojdzTm_FDyWn8HDUh4wvbdt011bjML1Vp20_ch9RYrUzmAtdKfho",
-          "storageType": "dropbox",
           "storageSecret": "",
           "foreignKeyName": ""
         },
@@ -1019,8 +987,8 @@
       "modelType": "Table",
       "name": "Chamado",
       "position": {
-        "x": 188,
-        "y": 474
+        "x": 178,
+        "y": 554
       },
       "queries": [],
       "realName": "",
@@ -1028,8 +996,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 195.0330047607422,
-        "width": 226.0625
+        "height": 184.088623046875,
+        "width": 200.984375
       },
       "tableName": "",
       "tableScheme": null,
@@ -1196,8 +1164,8 @@
       "modelType": "Table",
       "name": "Comentarios",
       "position": {
-        "x": 562,
-        "y": 768
+        "x": 542,
+        "y": 786
       },
       "queries": [],
       "realName": "",
@@ -1628,8 +1596,8 @@
       "modelType": "Table",
       "name": "Historico",
       "position": {
-        "x": 494,
-        "y": 520
+        "x": 444,
+        "y": 558
       },
       "queries": [],
       "realName": "",
@@ -2023,8 +1991,8 @@
       "modelType": "Table",
       "name": "Prioridade",
       "position": {
-        "x": 30,
-        "y": 470
+        "x": 12,
+        "y": 506
       },
       "queries": [],
       "realName": "",
@@ -2790,8 +2758,8 @@
       "modelType": "Table",
       "name": "Status",
       "position": {
-        "x": 34,
-        "y": 752
+        "x": 132,
+        "y": 832
       },
       "queries": [],
       "realName": "",
@@ -2923,8 +2891,8 @@
       "modelType": "Table",
       "name": "Tipo",
       "position": {
-        "x": 14,
-        "y": 598
+        "x": 10,
+        "y": 642
       },
       "queries": [],
       "realName": "",
